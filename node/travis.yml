@@ -1,0 +1,14 @@
+version: ~> 1.0
+language: node_js
+node_js:
+  - node
+script: yarn ci
+deploy:
+  edge: true
+  provider: npm
+  email: nw55@outlook.com
+  api_token:
+    secure: "s2tRR0Z1/rvJWZgnZ0Sh8FBGy+sw4aLYQQ25Z9l0S4i/ng/7EVyOshGY7lFhRWPwNmIyDqe0qki9fnQqJNXUrdzKUiqjHW7r2Sr0W2oHzqlyhdOlL7LTD8HdK8EMKHbqgq+OH1rRvUn7moBR45F7JoTtmZ8U6hoB+r3MyPaGBt6TW/uauJq47I+LWJFGnjmuZjQ80UdWGXkC1hgaUtQ6j0rg/qFUcqMk1b1OdYtYhSz/LW9us1UO4WheHcpp1RHEgGbwwuaCmKVmrq6gsi8cwnA3a8Ks2+A/NDuVTGK2/BZx++1PDamv4mmkU25gtL5Xp6TbU+nXiMJQoX+oHezuR9wDRX5f3r+9XfnPdK+bQs5GAz8TuF02zvDxDAYpP2CEo3JW+g4cK8oJ9px6NP99Xo+wglbN1tVHi/W+67UBLadACqsghZZoKcT+nfdwvQf2AU/Ku+xGBAMtWEeO9Nsx6xooEOXTN2/tq7oxuCh/ZQd/ddqer95O7HZGVA8+AzhKf3RGooI90aTsb1lKjx7jKpJS0po0iqJCrTZUC4JyFFRwnCR/F2JOUf2/Chf+VRqNSXELgl4GY9Y56gdqOcjatzubVlCwyWSQKNh9PcT8+P8a+DVmcfbpfRPt9RqasKbOda5f92ST2ubCSr41T3CNltUpH/pXLlNy5zeO6mEbIHA="
+  on:
+    tags: true
+    branch: master
